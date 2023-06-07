@@ -1,0 +1,97 @@
+.main_div {
+  display: wrap;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.PageOne {
+  background-color: #000;
+  align-items: center;
+  height: 500px;
+  width: 100%;
+}
+
+.Main_page2_3 {
+  display: wrap;
+  flex-direction: column;
+  padding: 75px 0;
+
+}
+
+.PageTwo {
+  background-color: #000;
+  height: 70vh;
+  width: 100%;
+  justify-content: center ;
+  display:inline-block;
+}
+@media only screen and (max-width: 450px) { 
+  .PageTwo{ 
+    height: 50vh;
+   }
+}
+.PageTwoButtons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 2%;
+}
+
+.PageThree {
+  background-color: #333333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 75px 0;
+}
+
+.PageFour {
+  background-color: #ffffff;
+  height: 85%;
+  width: 100%;
+}
+
+@media only screen and (max-width: 450px) { 
+  .PageFour{ 
+    height: 174%;
+   }
+}
+
+.PageFive{
+  height:30%;
+  width: 50%;
+  margin: auto 25%;
+  margin-top: 10px;
+  background-color: #333333;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  position: relative;
+  border-radius: 20px;
+}
+
+.page-content {
+  display: grid;
+  grid-gap: 1rem;
+  padding: 1rem;
+  max-width: 75%;
+  font-family: var(--font-sans);
+  margin: auto;
+  padding-top: 3%;
+}
+
+@media (min-width: 600px) {
+  .page-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 800px) {
+  .page-content {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

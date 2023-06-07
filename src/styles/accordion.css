@@ -1,0 +1,130 @@
+/** Accordion **/
+.accordion {
+    position: relative;
+    padding: 25px;
+  }
+  .accordion a {
+      float: right;
+      color: rgb(2, 2, 2);
+      font-size: 12px;
+  }
+  .accordion a:hover {
+      color: #383636 !important;
+  }
+  .accordion input[type=checkbox] {
+    opacity: 0;
+  }
+  .accordion label {
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      display: inline-block;
+      padding-right: 45px;
+    
+      font-weight: 100;
+  }
+  .accordion label:hover {
+      color: #030303 !important;
+  }
+  .accordion label::before {
+      content: "\f105";
+      font-family: FontAwesome;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 25px;
+      position: absolute;
+      top: 5px;
+    right: 0;
+    opacity: 0.1;
+  }
+  .accordion input[type="checkbox"]:checked ~ h2 label::before {
+      content: "\f107";
+      font-family: FontAwesome;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 25px;
+      position: absolute;
+      top: 5px;
+    right: 0;
+    opacity: 0.1;
+  }
+  .accordion p {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+  }
+  .accordion input[type=checkbox]:checked ~ h2 ~ p {
+    max-height: 330px;
+  }
+  /** Accordion Images **/
+.images {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+.column::after {
+	content: '';
+	clear: both;
+	display: block;
+}
+.column div {
+	position: relative;
+	float: left;
+	padding: 25px;
+}
+.column div span {
+	display: block;
+	color: #fff;
+	font-size: 18px;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	pointer-events: none;
+}
+.column mark {
+	background: unset;
+	color: #fff;
+	font-size: 12px;
+}
+.column figure {
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	overflow: hidden;
+}
+.column figure:hover+span {
+	opacity: 1;
+}
+.hoverblack figure {
+	background: black;
+}
+.hoverblack figure img {
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hoverblack figure:hover img {
+	opacity: 0.25;
+}
+@media only screen and (max-width: 992px) {
+  .accordion label {
+    font-size: 25px;
+    line-height: normal;
+  }
+  .accordion label::before {
+    top: 0px;
+  }
+  .column div span {
+    line-height: normal;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .column div {
+    padding: 0;
+  }
+}

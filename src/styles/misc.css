@@ -1,0 +1,129 @@
+.w3-bar .w3-bar-item {
+    padding: 16px;
+    color:black;
+}
+
+.w3-18 {
+    margin: 50px 0;
+}
+.w3-64custom{
+    padding-top: 1px!important;
+    padding-bottom: 1px!important;
+    padding-left: 20%!important;
+    padding-right: 20%!important;
+    justify-content: center;
+    display: flex;
+}
+
+.w3-wide {
+    letter-spacing: 10px;
+    display: block;
+    line-height: normal;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.w3-hover-opacity {
+    cursor: pointer;
+}
+
+textarea {
+    resize: none;
+}
+
+a:link,
+a:visited {
+    background-color: transparent;
+    text-decoration: none;
+    opacity: 1;
+}
+
+a:hover,
+a:active {
+    background-color: transparent;
+    color: #999;
+    opacity: 1;
+}
+
+/* Cookie */
+.alert {
+    padding: 20px;
+    color: white;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+input,
+textarea {
+    width: 100%;
+    border: 1px solid #efefef;
+    padding: 10px;
+    margin-top: 3px;
+    font-size: 0.9em;
+}
+
+input:focus,
+textarea:focus {
+    border: 1px solid #97d6eb;
+}
+
+.submit {
+    width: 120px;
+}
+
+.submit:hover {
+    color: #000 !important;
+    background-color: #ffffff !important;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3,
+    .bgimg-4 {
+        background-attachment: scroll;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    footer .nav {
+        height: 216px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .bgimg-1 {
+        background-image: url('/images/lankytojo-kede-min.jpg');
+    }
+
+    footer .nav {
+        height: auto;
+    }
+}
+
+@import url("https://fonts.googleapis.com/css?family=Cardo:400i|Rubik:400,700&display=swap");
+
+:root {
+    --d: 700ms;
+    --e: cubic-bezier(0.19, 1, 0.22, 1);
+    /* --font-sans: 'Rubik', sans-serif; */
+    /* --font-serif: 'Cardo', serif; */
+}
+
+
+.title {
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    color: white !important;
+    z-index: 10;
+}
+
+.copy {
+    font-size: 13px;
+    font-weight: 200;
+    line-height: 1.35;
+}
